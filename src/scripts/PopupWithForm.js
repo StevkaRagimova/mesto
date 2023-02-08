@@ -25,11 +25,11 @@ export default class PopupWithForm extends Popup {
     this._popup.querySelector('.form').addEventListener('submit', (event) => {
       event.preventDefault();
       this._handleFormSubmit(this._getInputValues());
-      this.closePopup();
+      this.close();
     });
   };
 
-  closePopup() {
-    super.closePopup();
+  close() {
+    reset.close(); //В данном методе также следует делать сброс полей ввода формы с помощью reset()
   };
 };

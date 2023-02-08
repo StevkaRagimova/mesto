@@ -1,18 +1,18 @@
 export default class UserInfo {
-  constructor (firstField, secondField) {
-    this._firstField = document.querySelector(firstField);
-    this._secondField = document.querySelector(secondField);
+  constructor (userNameSelector, userDescriptionSelector) {
+    this._userName = document.querySelector(firstField);
+    this._userDescription = document.querySelector(secondField);
   };
   
   getUserInfo() {
     this._profileFields = {}
-    this._profileFields.name = this._firstField.textContent;
-    this._profileFields.activity = this._secondField.textContent;
+    this._profileFields.name = this._userName.textContent;
+    this._profileFields.activity = this._userDescription.textContent;
     return this._profileFields;
   };
 
   setUserInfo(data) {
-    this._firstField.textContent = data.name;
-    this._secondField.textContent = data.activity;
+    this._userName.textContent = data.name;
+    this._userDescription.textContent = data.activity;
   };
 };   
