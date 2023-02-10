@@ -9,33 +9,33 @@ export const popupConfig = {
 
 export const initialValue = [
   {
-    name: "Архыз",
-    link:
+    pictureTitle: "Архыз",
+    pictureLink:
       "https://pictures.s3.yandex.net/frontend-developer/cards-compressed/arkhyz.jpg"
   },
   {
-    name: "Челябинская область",
-    link:
+    pictureTitle: "Челябинская область",
+    pictureLink:
       "https://pictures.s3.yandex.net/frontend-developer/cards-compressed/chelyabinsk-oblast.jpg"
   },
   {
-    name: "Иваново",
-    link:
+    pictureTitle: "Иваново",
+    pictureLink:
       "https://pictures.s3.yandex.net/frontend-developer/cards-compressed/ivanovo.jpg"
   },
   {
-    name: "Камчатка",
-    link:
+    pictureTitle: "Камчатка",
+    pictureLink:
       "https://pictures.s3.yandex.net/frontend-developer/cards-compressed/kamchatka.jpg"
   },
   {
-    name: "Холмогорский район",
-    link:
+    pictureTitle: "Холмогорский район",
+    pictureLink:
       "https://pictures.s3.yandex.net/frontend-developer/cards-compressed/kholmogorsky-rayon.jpg"
   },
   {
-    name: "Байкал",
-    link:
+    pictureTitle: "Байкал",
+    pictureLink:
       "https://pictures.s3.yandex.net/frontend-developer/cards-compressed/baikal.jpg"
   }
 ];

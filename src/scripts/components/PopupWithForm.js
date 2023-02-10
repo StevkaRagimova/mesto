@@ -9,7 +9,7 @@ export default class PopupWithForm extends Popup {
   setInputsValues(data) {
     this._inputsList.forEach(input => {
       input.value = data[input.name] || '';
-    }); 
+    });
   };
 
   _getInputValues() {
@@ -18,8 +18,8 @@ export default class PopupWithForm extends Popup {
       this._inputsValues[input.name] = input.value;
     });
     return this._inputsValues;
-  }; 
-  
+  };
+
   setEventListeners() {
     super.setEventListeners();
     this._popup.querySelector('.form').addEventListener('submit', (event) => {
@@ -27,9 +27,5 @@ export default class PopupWithForm extends Popup {
       this._handleFormSubmit(this._getInputValues());
       this.close();
     });
-  };
-
-  close() {
-    reset.close(); //В данном методе также следует делать сброс полей ввода формы с помощью reset()
   };
 };

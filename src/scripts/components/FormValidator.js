@@ -9,6 +9,7 @@ export class FormValidator {
     this.buttonElement = this._formElement.querySelector(
       this._config.submitButtonSelector
     );
+    this.updateButtonState();
   }
 
   enableValidation() {
