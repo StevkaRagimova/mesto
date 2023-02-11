@@ -12,9 +12,11 @@ export default class PopupWithImage extends Popup {
     this._imageFigure.alt = data.pictureTitle;
     this._subtitleFigure.textContent = data.pictureTitle;
   };
-};
 
-  close () {
+
+  close() {
     this._form.reset();
     super.close();
-  }
+  };
+
+};
