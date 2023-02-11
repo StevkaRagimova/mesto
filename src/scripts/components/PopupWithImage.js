@@ -13,3 +13,8 @@ export default class PopupWithImage extends Popup {
     this._subtitleFigure.textContent = data.pictureTitle;
   };
 };
+
+  close () {
+    super.close();
+    this._form.reset();
+  }
