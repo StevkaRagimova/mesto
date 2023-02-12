@@ -34,7 +34,7 @@ const profilePopup = new PopupWithForm('.popup_profile',
 
 profilePopup.setEventListeners();
 
-const cardPopup = new PopupWithForm('.popup_picture ', {handleFormSubmit: (cardPopupValues) => {
+const cardPopup = new PopupWithImage('.popup_picture ', {handleFormSubmit: (cardPopupValues) => {
   const userCard = createCard(cardPopupValues);
   cardsList.addItem(userCard);
 }});
