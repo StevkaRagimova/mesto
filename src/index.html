@@ -5,6 +5,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <title>Проект "Место"</title>
    </head>
+
    <body class="root">
       <div class="page">
          <header class="header">
@@ -12,7 +13,9 @@
          </header>
          <main>
             <section class="profile">
-               <img class="profile__avatar" src="<%=require('./images/avatar.png')%>" alt="Жак-Ив Кусто" />
+               <button class="profile__user-avatar" type="button">
+                  <img class="profile__avatar" src="<%=require('./images/avatar.png')%>" alt="Жак-Ив Кусто" />
+               </button>
                <div class="profile__info">
                   <div class="profile__wrapper">
                      <h1 class="profile__name">Жак-Ив Кусто</h1>
@@ -22,6 +25,7 @@
                </div>
                <button class="profile__add-button" type="button"></button>
             </section>
+
             <section class="elements">
             </section>
             <section class="popup popup_profile">
@@ -39,6 +43,7 @@
                   <button class="popup__button-close" type="button"></button>
                </div>
             </section>
+
             <!-- добавление нового места -->
             <section class="popup popup_picture">
                <div class="popup__container">
@@ -53,6 +58,29 @@
                   <button class="popup__button-close" type="button"></button>
                </div>
             </section>
+
+            <section class="popup popup-confirm">
+               <div class="popup__container">
+                  <h2 class="popup__title popup__title_no-fields">Вы уверены?</h2>
+                  <form class="form" name="confirm">
+                     <button class="form__button form__button_no-fields" type="submit">Да</button>
+                  </form>
+                  <button class="popup__button-close" type="button"></button>
+               </div>
+            </section>
+            <section class="popup popup-avatar">
+               <div class="popup__container">               
+                  <h2 class="popup__title">Обновить аватар</h2>
+                  <form class="form"  name="popup-card__form">
+                     <input class="form__input" id="input-avatar" type="url" name="avatar" placeholder="Ссылка на картинку">
+                        <span class="popup__input-error input-avatar-error"></span>
+                        <button class="form__button" type="submit" type="submit">Сохранить</button>
+                  </form>
+                  <button class="popup__button-close" type="button"></button>
+               </div>
+            </section>
+
+
             <!-- открытие просмотра фотографии -->
             <section class="popup popup_figure">
                <figure class="figure">
@@ -72,9 +100,10 @@
                <img class="element__image">
             </div>
             <div class="element__info">
-               <h2 class="element__title"></h2>
-               <button class="element__like-button" type="button"></button>
-            </div>
+               <div class="element__like-area">
+                  <button class="element__like-button" type="button"></button>
+                  <p class="element__likes-counter">0</p>
+               </div>
             <button class="element__trashbin-button" type="button"></button>
          </div>
       </template>

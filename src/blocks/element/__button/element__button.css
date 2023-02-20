@@ -3,7 +3,6 @@
     height: 19px;
     border: 0;
     background: url(../../../images/heart.svg) no-repeat center;
-    margin: auto;
     padding: 0;
     transition: 0.3s ease-in-out;
     cursor: pointer;
