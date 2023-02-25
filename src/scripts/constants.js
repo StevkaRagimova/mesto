@@ -43,3 +43,6 @@ export const initialValue = [
 
 export const editButton = document.querySelector('.profile__edit-button');
 export const addButton = document.querySelector('.profile__add-button');
+
+const identifier = 'https://mesto.nomoreparties.co/v1/cohort-60';
+const token = '4f70f1df-21fb-4c99-833d-40b28b677ede';

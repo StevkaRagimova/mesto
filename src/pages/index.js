@@ -6,6 +6,7 @@ import Section from "../scripts/components/Section.js";
 import PopupWithForm from "../scripts/components/PopupWithForm.js";
 import PopupWithImage from "../scripts/components/PopupWithImage.js";
 import UserInfo from "../scripts/components/UserInfo.js";
+import from "../scripts/components/Api.js";
 
 function createCard(cardItem) {
   const card = new Card({
@@ -58,4 +59,14 @@ editButton.addEventListener('click', () => {
 addButton.addEventListener('click', () => {
   popupCardValidation.updateButtonState(); 
   cardPopup.popup();
+});
+
+
+
+const server = new Api({
+  url: identifier,
+  headers: {
+    authorization: token,
+    'Content-Type': 'application/json'
+  }
 });
