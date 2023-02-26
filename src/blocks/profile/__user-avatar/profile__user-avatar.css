@@ -4,7 +4,7 @@
     display: flex;
     position: relative;
     background-color: #000000;
-    cursor: pointer
+    cursor: pointer;
 }
 .profile__user-avatar:hover:before{
     content:" ";
