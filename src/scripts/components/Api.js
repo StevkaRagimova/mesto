@@ -4,7 +4,7 @@ export default class Api {
     this._headers = headers;
   }
 
-  _getResponseData(res) {  // как переобозвать эту переменную?
+  _getResponseData(res) {  // как переобозвать эту переменную? не нравится мне это название
     if (res.ok) {
       return res.json();
     } else {
@@ -32,7 +32,7 @@ export default class Api {
       .then(res => this._getResponseData(res));
   }
 
-  addNewCard() {
+  addNewItem() {
     return fetch(`${this._url}/cards`, {
       method: 'GET',
       headers: this._headers
@@ -52,7 +52,7 @@ export default class Api {
       .then(res => this._getResponseData(res));
   }
 
-  removeItem(elem) {
+  removeCard(elem) {
     return fetch(`${this._url}/cards/${elem}`, {
       method: 'DELETE',
       headers: this._headers
